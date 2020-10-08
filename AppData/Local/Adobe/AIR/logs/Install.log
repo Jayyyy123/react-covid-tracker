@@ -1,0 +1,28 @@
+﻿[2020-03-19:15:47:50] Runtime Installer begin with version 3.1.0.4880 on Windows x86
+[2020-03-19:15:47:50] Commandline is: -silent -eulaAccepted -programMenu AdobeHelp.air
+[2020-03-19:15:47:50] No installed runtime detected
+[2020-03-19:15:47:50] Invoking Application Installer for combined install
+[2020-03-19:15:47:50] Launching subprocess with commandline C:\Users\Jay\AppData\Local\Temp\AIR9083.tmp\Adobe AIR\Versions\1.0\Adobe AIR Application Installer -runtime C:\Users\Jay\AppData\Local\Temp\AIR9083.tmp -silent -withRuntime -url -programMenu -eulaAccepted file:///C:/Users/Jay/Desktop/Adobe%20CS6%20Master%20Collection/install/payloads/AdobeHelp/AdobeHelp.air
+[2020-03-19:15:47:50] Application Installer begin with version 3.1.0.4880 on Windows x86
+[2020-03-19:15:47:50] Commandline is: -runtime C:\Users\Jay\AppData\Local\Temp\AIR9083.tmp -silent -withRuntime -url -programMenu -eulaAccepted file:///C:/Users/Jay/Desktop/Adobe%20CS6%20Master%20Collection/install/payloads/AdobeHelp/AdobeHelp.air
+[2020-03-19:15:47:50] No installed runtime detected
+[2020-03-19:15:47:50] Unpackaging file:///C:/Users/Jay/Desktop/Adobe%20CS6%20Master%20Collection/install/payloads/AdobeHelp/AdobeHelp.air to C:\Users\Jay\AppData\Local\Temp\fla9B60.tmp
+[2020-03-19:15:47:51] Package signature validation failed
+[2020-03-19:15:47:51] Got an unexpected fatal error while unpackaging: [ErrorEvent type="error" bubbles=false cancelable=false eventPhase=2 text="invalid package signature" errorID=5022]
+[2020-03-19:15:47:52] Application Installer end with exit code 7
+[2020-03-19:15:47:52] Subprocess app installer failed (7)
+[2020-03-19:15:47:52] Runtime Installer end with exit code 7
+[2020-03-19:15:50:43] Runtime Installer begin with version 2.7.1.19600 on Windows x86
+[2020-03-19:15:50:43] Commandline is: -silent -eulaAccepted -programMenu WidgetBrowser.air
+[2020-03-19:15:50:43] No installed runtime detected
+[2020-03-19:15:50:43] Invoking Application Installer for combined install
+[2020-03-19:15:50:43] Launching subprocess with commandline C:\Users\Jay\AppData\Local\Temp\AIR3804.tmp\Adobe AIR\Versions\1.0\Adobe AIR Application Installer -runtime C:\Users\Jay\AppData\Local\Temp\AIR3804.tmp -silent -withRuntime -url -programMenu -eulaAccepted file:///C:/Users/Jay/Desktop/Adobe%20CS6%20Master%20Collection/install/payloads/AdobeDreamweaverWidgetsBrowser1.0-mul/WidgetBrowser.air
+[2020-03-19:15:50:43] Application Installer begin with version 2.7.1.19600 on Windows x86
+[2020-03-19:15:50:43] Commandline is: -runtime C:\Users\Jay\AppData\Local\Temp\AIR3804.tmp -silent -withRuntime -url -programMenu -eulaAccepted file:///C:/Users/Jay/Desktop/Adobe%20CS6%20Master%20Collection/install/payloads/AdobeDreamweaverWidgetsBrowser1.0-mul/WidgetBrowser.air
+[2020-03-19:15:50:43] No installed runtime detected
+[2020-03-19:15:50:44] Unpackaging file:///C:/Users/Jay/Desktop/Adobe%20CS6%20Master%20Collection/install/payloads/AdobeDreamweaverWidgetsBrowser1.0-mul/WidgetBrowser.air to C:\Users\Jay\AppData\Local\Temp\fla4070.tmp
+[2020-03-19:15:50:44] Package signature validation failed
+[2020-03-19:15:50:44] Got an unexpected fatal error while unpackaging: [ErrorEvent type="error" bubbles=false cancelable=false eventPhase=2 text="invalid package signature" errorID=5022]
+[2020-03-19:15:50:44] Application Installer end with exit code 7
+[2020-03-19:15:50:45] Subprocess app installer failed (7)
+[2020-03-19:15:50:45] Runtime Installer end with exit code 7
