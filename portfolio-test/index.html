@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio 3</title>
+    <!-- Import css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <!-- Texts -->
+    <!-- Poppins text -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Noto Sans text -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lato -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/96c2ebbca9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JS script -->
+    <script>
+      function openNav() {
+        const sideNav = document.getElementById("side__nav");
+        sideNav.style.width = "250px";
+        document.getElementById("side__menuContainer").style.display =
+          "inherit";
+        document.getElementById("side__menuContainer").style.animation =
+          "fadeIn 2s";
+      }
+
+      function closeNav() {
+        const sideNav = document.getElementById("side__nav");
+        sideNav.style.width = "0";
+        document.getElementById("side__menuContainer").style.display = "none";
+      }
+
+      function closeSideNav() {
+        const sideNav = document.getElementById("side__nav");
+        sideNav.style.width = "0";
+        document.getElementById("side__menuContainer").style.display = "none";
+        document.getElementById("about__title").className =
+          "about__title about-slide-right";
+        document.getElementById("about__bodyText").className =
+          "about__bodyText about-slide-right";
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 200 ||
+          document.documentElement.scrollTop > 200
+        ) {
+          document.getElementById("sideMenu__icon").className =
+            "fas fa-bars side__black";
+          document.getElementById("arrow__icon").style.display = "inherit";
+          document.getElementById("arrow__icon").style.zIndex = "1";
+          document.getElementById("about__title").className =
+            "about__title about-slide-right";
+          document.getElementById("about__bodyText").className =
+            "about__bodyText about-slide-right";
+        } else {
+          document.getElementById("sideMenu__icon").className = "fas fa-bars";
+          document.getElementById("arrow__icon").style.display = "none";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Home section -->
+    <section id="#home__section" class="home__section">
+      <!-- Homepage -->
+      <div id="home__section" class="home">
+        <!-- Responsive Side menu bar -->
+        <span class="menu__icon" onclick="openNav()"
+          ><i id="sideMenu__icon" class="fas fa-bars"><h3>MENU</h3></i></span
+        >
+        <div class="side__menu">
+          <div id="side__nav" class="side__nav">
+            <div id="side__menuContainer">
+              <!-- Close button -->
+              <div class="close__btn">
+                <h3>NAVIGATION</h3>
+                <a href="javascript:void(0)" onclick="closeNav()"
+                  ><i class="fas fa-times"></i
+                ></a>
+              </div>
+              <!-- Side menu list -->
+              <div id="side__menuList" class="side__menuList">
+                <a href="#home__section" onclick="closeNav()">Home</a>
+                <a href="#about__section" onclick="closeSideNav()">About</a>
+                <a href="#services__section" onclick="closeNav()">Services</a>
+                <a href="#projects__section" onclick="closeNav()">Projects</a>
+                <a href="#contact__section" onclick="closeNav()">Contact</a>
+              </div>
+              <!-- Side menu items -->
+              <div id="side__menuItem" class="side__menuItem">
+                <p>
+                  Mankind is drawn to the heavens for the same reason we were
+                  once drawn into unknown lands and across the open sea. We
+                  choose to explore space because doing so improves our lives,
+                  and lifts our national spirit. So let us continue the journey.
+                  <br />
+                  – George W. Bush
+                </p>
+              </div>
+              <div id="side__footer" class="side__footer">
+                <footer>&copy; Copyright 2020 Jay Tan</footer>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home__center">
+          <h4>WELCOME TO MY PAGE</h4>
+          <p>
+            I am Jay Tan, a web developer who design influential brands and
+            digital experiences.
+          </p>
+          <a href="#about__section"><span>MORE ABOUT ME</span></a>
+        </div>
+        <div id="arrow__icon" class="arrow__icon arrow__black">
+          <a href="#home__section"><i class="fas fa-arrow-up"></i></a>
+        </div>
+        <div class="side__icon">
+          <a
+            href="https://www.linkedin.com/in/jayyy-tan-70018a158/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Jayyyy123" target="_blank"
+            ><i class="fab fa-github-square"></i
+          ></a>
+          <a href="https://www.facebook.com/J.i.E.z.666/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/jayyyy_t123/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="#about__section">
+      <div id="about__section" class="about__page">
+        <div id="about__title" class="about__title">
+          <h1>HELLO THERE</h1>
+          <p>I am Jay Tan</p>
+        </div>
+        <div id="about__bodyText" class="about__bodyText">
+          <p>
+            My name is Tan Yi Jie. I live in Malaysia. <br />
+            I am skilled in Python, Javascript, HTML, and CSS. I create clean,
+            functional, professional websites and desktop application. <br />
+            Do you want to build and improve your career?
+            <br />
+            Think we could create something together? <br />
+            Feel free to drop me an
+            <a
+              class="email__link"
+              href="mailto:yijie2333@gmail.com"
+              alt=""
+              target="_blank"
+            >
+              <strong>email</strong></a
+            >
+            or send me a message at
+            <a href="#contact__section" class="contact__link">here</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="#services__section">
+      <div id="services__section" class="services__page">
+        <div class="services__title">
+          <h1>WHAT I DO</h1>
+          <p>
+            I can provide things that you need to launch and grow your bussiness
+          </p>
+        </div>
+        <div class="services__body">
+          <div class="services__option">
+            <img src="./assets/img/svg/web.svg" style="max-width: 40px" />
+            <h1>Web UI/UX Design</h1>
+            <p>
+              I can design a clean landing / startup page with a unique user
+              interface for you to improve your career.
+            </p>
+          </div>
+          <div class="services__option">
+            <img
+              src="./assets/img/svg/web-development.svg"
+              style="max-width: 40px"
+            />
+            <h1>Web Development</h1>
+            <p>
+              I can build a professional and functional website to grow your
+              business.
+            </p>
+          </div>
+          <div class="services__option">
+            <img src="./assets/img/svg/desktop.svg" style="max-width: 40px" />
+            <h1>Desktop Application</h1>
+            <p>
+              I can create functional desktop software applications that can
+              help you to manage your business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project section -->
+    <section id="#projects__section" class="projects__section">
+      <div id="projects__section" class="projects__page">
+        <div class="projects__title">
+          <h1>PROJECTS</h1>
+          <p>I love what I do, check out my latest works</p>
+        </div>
+      </div>
+      <div class="projects__body">
+        <!-- Project row 1-->
+        <div class="projects__row01">
+          <div class="projects__container">
+            <!-- Project image -->
+            <img
+              src="./assets/img/portfolio/amazon-clone.jpg"
+              alt=""
+              class="projects__image"
+            />
+            <!-- Project link -->
+            <div class="overlay">
+              <div class="projects__text">
+                <span>Amazon clone with React JS</span>
+              </div>
+            </div>
+            <div class="projects__icon">
+              <a
+                href="https://github.com/Jayyyy123/react-amazon-clone"
+                class="fa fa-github"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://clone-ed944.web.app/"
+                class="far fa-eye"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              </a>
+            </div>
+          </div>
+          <div class="projects__container">
+            <img
+              src="./assets/img/portfolio/python-ai.jpg"
+              alt=""
+              class="projects__image"
+            />
+            <div class="overlay">
+              <div class="projects__text">
+                <span>License plate recogniton with Python</span>
+              </div>
+            </div>
+            <div class="projects__icon">
+              <a
+                href="https://github.com/Jayyyy123/license-plate-gui"
+                class="fa fa-github"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://imgur.com/gallery/NX9HOmt"
+                class="far fa-eye"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              </a>
+            </div>
+          </div>
+          <div class="projects__container">
+            <img
+              src="./assets/img/portfolio/spotify-clone.JPG"
+              alt=""
+              class="projects__image"
+            />
+            <div class="overlay">
+              <div class="projects__text">Spotify clone with React JS</div>
+            </div>
+            <div class="projects__icon">
+              <a
+                href="#"
+                class="fa fa-github"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://spotify-clone-d9259.web.app/"
+                class="far fa-eye"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects row 2 -->
+        <div class="projects__row02">
+          <div class="projects__container">
+            <img
+              src="./assets/img/portfolio/whatsapp-clone.jpg"
+              alt=""
+              class="projects__image"
+            />
+            <div class="overlay">
+              <div class="projects__text">Whatsapp clone with MERN stack</div>
+            </div>
+            <div class="projects__icon">
+              <a
+                href="https://github.com/Jayyyy123/react-whatsapp-clone"
+                class="fa fa-github"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://whatsapp-mern-eb6c9.web.app/"
+                class="far fa-eye"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              </a>
+            </div>
+          </div>
+          <div class="projects__container">
+            <img
+              src="./assets/img/portfolio/counter-app.jpg"
+              alt=""
+              class="projects__image"
+            />
+            <div class="overlay">
+              <div class="projects__text">
+                <span>Simple counter app with React JS</span>
+              </div>
+            </div>
+            <div class="projects__icon">
+              <a
+                href="https://github.com/Jayyyy123/counter-app"
+                class="fa fa-github"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://jayyyy123.github.io/counter-app/"
+                class="far fa-eye"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              </a>
+            </div>
+          </div>
+          <div class="projects__container">
+            <img
+              src="./assets/img/portfolio/k-trend.JPG"
+              alt=""
+              class="projects__image"
+            />
+            <div class="overlay">
+              <div class="projects__text">
+                Music lyrics searching website(In process)
+              </div>
+            </div>
+            <div class="projects__icon">
+              <a
+                href="#"
+                class="fa fa-github"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="#"
+                class="far fa-eye"
+                alt=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="#contact__section">
+      <div id="contact__section" class="contact__page">
+        <div class="contact__title">
+          <h1>CONTACT ME</h1>
+          <p>Keep in touch with me</p>
+        </div>
+      </div>
+      <div class="contact__body">
+        <div class="contact__form">
+          <div class="contact__formLeft">
+            <form id="myform" method="POST" action="./contact.php">
+              <label>Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Write your name here."
+              />
+              <label>Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                required
+                placeholder="Write your email here."
+              />
+              <label>Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Write your subject here."
+              />
+              <label>Message</label>
+              <textarea
+                class="message__textarea"
+                id="message"
+                name="message"
+                required
+                placeholder="Leave your message at here."
+              ></textarea>
+
+              <input type="submit" name="send" value="Send" />
+            </form>
+          </div>
+          <div class="contact__formRight">
+            <div class="contact__formRightContent">
+              <h1>CONTACT INFO</h1>
+              <div class="contact__icons">
+                <img
+                  src="./assets/img/svg/location-pin.svg"
+                  style="max-width: 20px"
+                />
+                <h2>Location</h2>
+              </div>
+              <p>Malaysia</p>
+              <div class="contact__icons">
+                <img src="./assets/img/svg/mail.svg" style="max-width: 20px" />
+                <h2>Email me</h2>
+              </div>
+              <a
+                class="contact__emailLink"
+                href="mailto:yijie2333@gmail.com"
+                alt=""
+                target="_blank"
+              >
+                <p>yijie2333@gmail.com</p></a
+              >
+              <div class="contact__icons">
+                <img
+                  src="./assets/img/svg/phone-call.svg"
+                  style="max-width: 20px"
+                />
+                <h2>Call me</h2>
+              </div>
+
+              <p>(+60) 12 345 6789</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer__section">
+      <div id="footer__section" class="footer__page">
+        <div class="footer__title">
+          <div class="footer__titleLeft">
+            <h1>Jay Tan</h1>
+            <p>
+              Do you want to build your own website page?<br />
+              Do you want to manage your own business page?<br />Do you want to
+              improve your career?<br />Feel free to contact me!
+            </p>
+            <footer>&copy; Copyright 2020 Jay Tan</footer>
+          </div>
+          <div class="footer__titleRight">
+            <h1>Get notified</h1>
+            <p>Subscribe to the newsletter!</p>
+
+            <a href="https://www.facebook.com/J.i.E.z.666/" target="_blank"
+              ><img
+                src="./assets/img/svg/facebook.svg"
+                style="max-width: 25px"
+              />
+            </a>
+            <a href="https://www.instagram.com/jayyyy_t123/" target="_blank"
+              ><img
+                src="./assets/img/svg/instagram.svg"
+                style="max-width: 25px"
+            /></a>
+            <a href="https://twitter.com/123Jayyyy" target="_blank">
+              <img src="./assets/img/svg/twitter.svg" style="max-width: 25px"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/jayyy-tan-70018a158/"
+              target="_blank"
+              ><img src="./assets/img/svg/linkedin.svg" style="max-width: 25px"
+            /></a>
+            <input type="text" id="subject" name="subject" required />
+            <input type="submit" name="send" value="Subscribe" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
